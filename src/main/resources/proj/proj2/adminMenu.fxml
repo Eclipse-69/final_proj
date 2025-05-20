@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.proj2.adminMenuController">
+    <children>
+        <AnchorPane layoutY="84.0" prefHeight="716.0" prefWidth="1200.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="createNewUserButton" layoutX="37.0" layoutY="26.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="185.0" text="Create New User">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <!-- User Management Section -->
+                <Label layoutX="250.0" layoutY="26.0" text="Manage Users" textFill="#000000">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="usersTable" layoutX="250.0" layoutY="60.0" prefHeight="200.0" prefWidth="900.0">
+                    <columns>
+                        <TableColumn fx:id="idusersColumn" prefWidth="60.0" text="ID" />
+                        <TableColumn fx:id="usernameColumn" prefWidth="100.0" text="Username" />
+                        <TableColumn fx:id="firstnameColumn" prefWidth="100.0" text="First Name" />
+                        <TableColumn fx:id="lastnameColumn" prefWidth="100.0" text="Last Name" />
+                        <TableColumn fx:id="emailColumn" prefWidth="160.0" text="Email" />
+                        <TableColumn fx:id="passwordColumn" prefWidth="100.0" text="Password" />
+                        <TableColumn fx:id="positionColumn" prefWidth="100.0" text="Position" />
+                        <TableColumn fx:id="genderColumn" prefWidth="80.0" text="Gender" />
+                        <TableColumn fx:id="ageColumn" prefWidth="80.0" text="Age" />
+                        <TableColumn fx:id="resumeColumn" prefWidth="100.0" text="Resume" />
+                        <TableColumn fx:id="jobDetailsColumn" prefWidth="120.0" text="Job Details" />
+                    </columns>
+                </TableView>
+                <!-- Edit User Fields -->
+                <TextField fx:id="editIdusersField" layoutX="250.0" layoutY="280.0" prefWidth="100.0" promptText="ID" editable="false" />
+                <TextField fx:id="editUsernameField" layoutX="360.0" layoutY="280.0" prefWidth="100.0" promptText="Username" />
+                <TextField fx:id="editFirstnameField" layoutX="470.0" layoutY="280.0" prefWidth="100.0" promptText="First Name" />
+                <TextField fx:id="editLastnameField" layoutX="580.0" layoutY="280.0" prefWidth="100.0" promptText="Last Name" />
+                <TextField fx:id="editEmailField" layoutX="250.0" layoutY="320.0" prefWidth="150.0" promptText="Email" />
+                <TextField fx:id="editPasswordField" layoutX="410.0" layoutY="320.0" prefWidth="100.0" promptText="Password" />
+                <TextField fx:id="editPositionField" layoutX="520.0" layoutY="320.0" prefWidth="100.0" promptText="Position" />
+                <TextField fx:id="editGenderField" layoutX="630.0" layoutY="320.0" prefWidth="80.0" promptText="Gender" />
+                <TextField fx:id="editAgeField" layoutX="720.0" layoutY="320.0" prefWidth="80.0" promptText="Age" />
+                <TextField fx:id="editResumeField" layoutX="250.0" layoutY="360.0" prefWidth="100.0" promptText="Resume" />
+                <TextField fx:id="editJobDetailsField" layoutX="360.0" layoutY="360.0" prefWidth="120.0" promptText="Job Details" />
+                <Button fx:id="saveButton" layoutX="250.0" layoutY="400.0" text="Save Changes" />
+                <Button fx:id="deleteButton" layoutX="350.0" layoutY="400.0" text="Delete User" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="108.0" layoutY="22.0" prefHeight="62.0" prefWidth="498.0" text="Employee Information System" textFill="#15a637">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
